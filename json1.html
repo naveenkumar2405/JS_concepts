@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  h1 {
+    text-align: center;
+    font-style: italic;
+    font-family: sans-serif;
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(71, 4, 4), rgb(34, 6, 248));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
+
+<body>
+
+  <h1>JS Functions & Arrays</h1>
+
+  <script>
+    const data = [{
+      "name": "Naveen",
+      "age": 23
+    }, {
+      "name": "Sathyamoothy",
+      "age": 30
+    }, {
+      "name": "prasanth",
+      "age": 22
+    }, {
+      "name": "danga_marri",
+      "age": 23
+    }, {
+      "name": "Navin",
+      "age": 18
+    }, {
+      "name": "ashwin Reddy",
+      "age": 50
+    }, {
+      "name": "parker",
+      "age": 25
+    }, {
+      "name": "sundar",
+      "age": 8
+    }, {
+      "name": "Mark",
+      "age": 12
+    }, {
+      "name": "Josh",
+      "age": 20
+    }, {
+      "name": "kumar",
+      "age": 19
+    }];
+
+    const anames = data.filter(datas1 => (datas1.name === 'Naveen'));
+    console.log(anames);
+
+
+    const allowForMovie = data.filter(datas2 => (datas2.age < 18));
+    console.log(allowForMovie);
+
+    const allow = data.filter(datas3 => (datas3.age > 18));
+    console.log(allow);
+  </script>
+
+</body>
+
+</html>
