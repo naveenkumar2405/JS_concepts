@@ -68,6 +68,11 @@
 
     const allow = data.filter(datas3 => (datas3.age > 18));
     console.log(allow);
+    
+    
+    const result = name => data.filter(e => e.name.toLowerCase().startsWith(name.toLowerCase()));
+    console.log(result("n"));
+
   </script>
 
 </body>
